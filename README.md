@@ -4,7 +4,7 @@ A Python bot that replies to YouTube comments on a specified video, with customi
 
 ## Setup
 
-See the [YouTube Bot Setup and Execution Guide.txt](YouTube Bot Setup and Execution Guide.txt) for detailed instructions.
+See the [YouTube Bot Setup and Execution Guide.txt] for detailed instructions.
 
 ## Usage
 
