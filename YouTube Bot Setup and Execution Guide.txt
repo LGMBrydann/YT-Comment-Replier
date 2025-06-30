@@ -1,0 +1,114 @@
+# YouTube Bot Setup and Execution Guide
+
+This guide will help you set up and run the `youtube-bot.py` script. Follow the steps below carefully to ensure smooth execution.
+
+---
+
+## Prerequisites
+
+1. **Python 3.7 or later**
+
+   * Ensure Python is installed on your system.
+   * Check with: `python3 --version`
+   * If not installed, run: `sudo apt update && sudo apt install python3 python3-pip python3-venv`
+
+2. **Client Secret JSON**
+
+   * Obtain a `client_secret.json` file from your Google Cloud Project.
+   * Save it in the same directory as `youtube-bot.py`.
+
+---
+
+## Steps to Run the Bot
+
+### 1. Create a Virtual Environment
+
+This isolates the dependencies required by the script.
+
+```bash
+python3 -m venv ytbot-env
+```
+
+### 2. Activate the Virtual Environment
+
+```bash
+source ytbot-env/bin/activate
+```
+
+### 3. Install Required Packages
+
+Inside the activated virtual environment, install the dependencies:
+
+```bash
+pip install --upgrade google-auth-oauthlib google-api-python-client
+```
+
+### 4. Place the Script and Client Secret File
+
+Ensure the following files are in the same directory:
+
+* `youtube-bot.py`
+* `client_secret.json`
+
+### 5. Run the Script
+
+To execute the bot, use:
+
+```bash
+python youtube-bot.py
+```
+
+### 6. Authenticate the Bot
+
+* The first time you run the script, it will open a browser window to authenticate your Google account.
+* Log in and grant the necessary permissions.
+
+### 7. Interact with the Bot
+
+* Follow the on-screen prompts.
+* Use the main menu to add reply phrases or start replying to comments.
+
+---
+
+## Troubleshooting
+
+### "python: command not found"
+
+Use `python3` instead:
+
+```bash
+python3 youtube-bot.py
+```
+
+### "ModuleNotFoundError: No module named 'google\_auth\_oauthlib'"
+
+Ensure the virtual environment is activated and dependencies are installed:
+
+```bash
+source ytbot-env/bin/activate
+pip install --upgrade google-auth-oauthlib google-api-python-client
+```
+
+### "Error: client\_secret.json not found"
+
+* Verify that `client_secret.json` is in the same folder as `youtube-bot.py`.
+* Check the file name for typos.
+
+### Exiting the Virtual Environment
+
+To exit the virtual environment, simply type:
+
+```bash
+deactivate
+```
+
+---
+
+## Notes
+
+* Always activate the virtual environment (`source ytbot-env/bin/activate`) before running the bot.
+* If you need to reset the environment, delete the `ytbot-env` folder and repeat steps 1-3.
+
+---
+
+Enjoy using LGM’s YouTube Replier Bot! 🎉
