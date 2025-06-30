@@ -1,0 +1,14 @@
+# Python virtual environment
+ytbot-env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Token and credentials files
+token.pickle
+client_secret.json
+
+# VSCode settings (optional)
+.vscode/
