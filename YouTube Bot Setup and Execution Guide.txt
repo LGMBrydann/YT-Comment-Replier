@@ -67,6 +67,19 @@ python youtube-bot.py
 
 * Follow the on-screen prompts.
 * Use the main menu to add reply phrases or start replying to comments.
+### 8. Setting Up `client_secret.json`
+
+1. Go to the [Google Cloud Console] (https://console.cloud.google.com/)
+2. Create a new project or use an existing one.
+3. Enable the **YouTube Data API v3** for the project.
+4. Create OAuth 2.0 credentials:
+   - Navigate to **APIs & Services > Credentials**.
+   - Click **Create Credentials > OAuth client ID**.
+   - Configure the consent screen (if prompted).
+   - Set "Application type" to **Desktop app**.
+   - Download the JSON file after creation.
+5. Save the file as `client_secret.json` in the same directory as `youtube-bot.py`.
+
 
 ---
 
