@@ -67,6 +67,7 @@ python youtube-bot.py
 
 * Follow the on-screen prompts.
 * Use the main menu to add reply phrases or start replying to comments.
+
 ### 8. Setting Up `client_secret.json`
 
 1. Go to the [Google Cloud Console] (https://console.cloud.google.com/)
